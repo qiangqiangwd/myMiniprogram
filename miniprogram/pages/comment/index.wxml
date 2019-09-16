@@ -1,0 +1,24 @@
+<!-- 评论部分 -->
+<view class="commentBox">
+    <view wx:for="{{commentList}}" wx:key="item._id" class="list">
+        <!-- {{index}} -->
+        <comment option="{{item}}" userId="{{userInfo.id}}" binddelComment="delComment" bindqueryReply="queryReply"></comment>
+    </view>
+    <view class="canGetMore">{{isInFooter ? '到底啦~' : '下拉加载更多...'}}</view>
+</view>
+<!-- 二级评论弹框 -->
+<secondCmt isShow="{{isShow}}" data="{{secondData}}" bindreply="submitComment" commentId="{{commentId}}"></secondCmt>
+<!-- 添加按钮 -->
+<view class="menuBtn">
+    <view class="cir" bindtap="ocTextarea">
+        <text class="txt">+</text>
+    </view>
+</view>
+<!-- 添加评论弹框 -->
+<view class="addContentBox" wx:if="{{isShowTextarea}}">
+    <view class="shadow" bindtap="ocTextarea"></view>
+    <view class="box">
+        <textarea class="textarea" placeholder="输入内容" bindinput="changeComment"></textarea>
+        <button class="button longButton" bindtap="submitComment">确认提交</button>
+    </view>
+</view>

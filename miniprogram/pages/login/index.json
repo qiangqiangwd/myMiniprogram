@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "登录中...",
+  "usingComponents": {
+    "i-lottie":"../../components/i-lottie/lottie"
+  }
+}

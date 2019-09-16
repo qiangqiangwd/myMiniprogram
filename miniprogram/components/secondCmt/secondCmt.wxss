@@ -1,0 +1,129 @@
+/* components/secondCmt/secondCmt.wxss */
+.secondComment .shadow {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1100;
+}
+
+.secondComment .contentBox {
+  position: fixed;
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1101;
+}
+.contentScroll {
+  max-height: 800rpx;
+  padding: 20rpx 0 0 0;
+}
+
+.secondComment .list {
+  padding: 40rpx 20rpx;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+}
+.secondComment .list:last-of-type {
+  border-bottom: 1px solid #ffffff;
+}
+.secondComment .head {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 18rpx #eeeeee;
+}
+.secondComment .head image {
+  width: 100%;
+  height: 100%;
+}
+
+.secondComment .content {
+  width: calc(100% - 100rpx);
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.topInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.name,
+.time {
+  font-size: 30rpx;
+  color: #999999;
+}
+
+.cnt {
+  font-size: 28rpx;
+  color: #333333;
+  text-align: justify;
+  word-break: break-all;
+}
+
+.like {
+  color: #666666;
+  font-size: 24rpx;
+}
+.addLike {
+  color: #f33;
+}
+.othInfo {
+  margin-top: 20rpx;
+}
+.time,
+.index {
+  font-size: 24rpx;
+  color: #999999;
+}
+.index {
+  margin-right: 20rpx;
+}
+
+.hasNone {
+  font-size: 24rpx;
+  text-align: center;
+  padding: 40rpx 0;
+}
+
+.replyBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  border-top: 1px solid #eeeeee; 
+}
+.replyBox .input {
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  width: 75%;
+  font-size: 24rpx;
+  padding: 10rpx 25rpx;
+  line-height: 1;
+  border-radius: 60rpx;
+  -webkit-border-radius: 60rpx;
+  -moz-border-radius: 60rpx;
+  -ms-border-radius: 60rpx;
+  -o-border-radius: 60rpx;
+}
+.replyBox .input input{
+    width: 100%;
+}
+.replyBox button {
+  background: #409eff;
+  color: #ffffff;
+  font-size: 24rpx;
+  width: 20%;
+  margin: 0;
+}

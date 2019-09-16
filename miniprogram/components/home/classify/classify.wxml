@@ -1,0 +1,24 @@
+<!-- components/home/classify/classify.wxml -->
+<view class="searchInput">
+    <input placeholder="请输入对应根据关键字" placeholder-style="color:#999999;" bindconfirm="sureToSearch" />
+    <view class="btn">搜索</view>
+</view>
+<view class="classify">
+    <view class="list">游戏</view>
+    <view class="list">动漫</view>
+    <view class="list">音乐</view>
+    <view class="list">科技</view>
+    <view class="list">体育</view>
+</view>
+<view class="rank">
+    <view class="title">话题排行</view>
+    <view class="rankBox">
+        <view class="list" wx:for="{{rankList}}" wx:key="{{index}}">
+            <view class="name">
+                <text class="{{index == 0 ? 'fi' : (index == 1 ? 'se' : index == 2 ? 'tr' : '')}}">{{index+1}}、</text>
+                {{item.name}}
+            </view>
+            <view class="tips">#{{item.type}}</view>
+        </view>
+    </view>
+</view>

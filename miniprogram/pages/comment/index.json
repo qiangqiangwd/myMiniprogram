@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "评论",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "comment": "../../components/comment/comment",
+    "secondCmt": "../../components/secondCmt/secondCmt"
+  }
+}

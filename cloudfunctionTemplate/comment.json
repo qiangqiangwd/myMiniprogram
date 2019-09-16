@@ -1,0 +1,17 @@
+[
+  {
+    "name": "删除评论",
+    "value": {
+      "type": "remove",
+      "id": "efdeb2615d777b771713f12c4952b10e",
+      "userId": "3c4c6d855d75b4c615f1bfc1449edb8b"
+    }
+  },
+  {
+    "name": "获取评论",
+    "value": {
+      "type": "get",
+      "userId": "3c4c6d855d75b4c615f1bfc1449edb8b"
+    }
+  }
+]

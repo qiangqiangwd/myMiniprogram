@@ -1,0 +1,41 @@
+<!-- components/secondCmt/secondCmt.wxml -->
+<view class="secondComment" wx:if="{{isShow}}">
+    <!-- 遮罩层 -->
+    <view class="shadow" bindtap="_close"></view>
+    <!-- 内容 -->
+    <view class="contentBox">
+        <scroll-view scroll-y class="contentScroll">
+            <view class="list" wx:for="{{data}}" wx:key="{{index}}">
+                <!-- 头像 -->
+                <view class="head">
+                    <image src="{{item.avatarUrl}}" mode="aspectFill" lazy-load="{{true}}" />
+                </view>
+                <!-- 内容 -->
+                <view class="content">
+                    <view class="topInfo">
+                        <view class="name">{{item.nickName}}</view>
+                        <view class="like {{item.isAddLiked ? 'addLike' :''}}" bindtap="likeChange">
+                            {{item.isAddLiked ? '已' :''}}赞 {{item.liked}}
+                        </view>
+                    </view>
+                    <view class="cnt">{{item.content}}</view>
+                    <!-- 操作部分 -->
+                    <view class="othInfo">
+                        <text class="index">#{{index+1}}</text>
+                        <text class="time">{{item.showDate}}</text>
+                    </view>
+                </view>
+                <!-- 最右侧 -->
+                <view class="rCnt"></view>
+            </view>
+            <view wx:if="{{data.length <= 0}}" class="hasNone">暂无相关回复~</view>
+        </scroll-view>
+        <!-- 回复框 -->
+        <view class="replyBox">
+            <view class="input">
+                <input type="text" value="{{replyCnt}}" placeholder="请输入回复内容~" bindinput="_inputChange"/>
+            </view>
+            <button bindtap="reply">回复</button>
+        </view>
+    </view>
+</view>

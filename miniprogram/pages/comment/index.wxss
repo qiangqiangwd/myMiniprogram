@@ -1,0 +1,106 @@
+/* miniprogram/pages/index/index.wxss */
+.commentBox {
+  margin: 20rpx 20rpx 100px 20rpx;
+}
+.commentBox .list {
+  margin-bottom: 20rpx;
+}
+.menuBtn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.menuBtn .cir {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #ffffff;
+  margin-left: -90px;
+  margin-bottom: -90px;
+  text-align: right;
+  color: #333333;
+  font-size: 24rpx;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 0 20px #cccccc;
+}
+.menuBtn .cir .txt {
+  position: relative;
+  top: 45px;
+  right: 51px;
+}
+.menuBtn .cir .txt::before,
+.menuBtn .cir .txt::after {
+  content: "";
+  position: absolute;
+  background: #333333;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate();
+}
+.menuBtn .cir .txt::after {
+  width: 30px;
+  height: 5px;
+}
+.menuBtn .cir .txt::before {
+  width: 5px;
+  height: 30px;
+}
+
+.addContentBox .shadow {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.addContentBox .box {
+  background: #ffffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1010;
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius: 6rpx;
+  -webkit-border-radius: 6rpx;
+  -moz-border-radius: 6rpx;
+  -ms-border-radius: 6rpx;
+  -o-border-radius: 6rpx;
+}
+.textarea {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 6rpx;
+  -webkit-border-radius: 6rpx;
+  -moz-border-radius: 6rpx;
+  -ms-border-radius: 6rpx;
+  -o-border-radius: 6rpx;
+  margin-bottom: 20rpx;
+}
+
+
+.canGetMore{
+  font-size: 24rpx;
+  color: #999999;
+  text-align: center;
+  padding: 20rpx 0 0;
+}

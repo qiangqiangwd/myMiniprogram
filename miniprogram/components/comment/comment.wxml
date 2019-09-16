@@ -1,0 +1,27 @@
+<!-- components/comment/comment.wxml -->
+<view class="commentBox">
+    <!-- 头像 -->
+    <view class="head">
+        <image src="{{option.avatarUrl}}" mode="aspectFill" lazy-load="{{true}}" />
+    </view>
+    <!-- 内容 -->
+    <view class="content">
+        <view class="topInfo">
+            <view class="name">{{option.nickName}}</view>
+            <view class="time">{{option.showDate}}</view>
+        </view>
+        <view class="cnt">{{option.content}}</view>
+        <!-- 操作部分 -->
+        <view class="operation">
+            <view class="like {{option.isAddLiked ? 'addLike' :''}}" bindtap="likeChange">
+                {{option.isAddLiked ? '已' :''}}赞<text class="num">{{option.liked}}</text>
+            </view>
+            <view class="comment" bindtap="queryReply">
+                <image class="" src="./icon1.png" mode="aspectFill" lazy-load="true" />
+                <view>{{option.reply}}</view>
+            </view>
+            <view class="del" wx:if="{{userId ===  option.userId}}" bindtap="delectComment">删除</view>
+            <view wx:else></view>
+        </view>
+    </view>
+</view>

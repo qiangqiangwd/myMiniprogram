@@ -1,0 +1,28 @@
+<!-- components/home/hot.wxml -->
+<view class="container">
+    <view class="list" bindtap="turnToComment" data-url="../comment/index">
+        <view class="tit">
+            <view class="name">从零开始的异界生活</view>
+            <view class="label">HOT</view>
+        </view>
+        <view class="img">
+            <image class="" src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=32b8d82db7014a90813e41bb914c5e2f/e61190ef76c6a7efe2b4cfb9f3faaf51f2de669a.jpg" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
+        </view>
+        <view class="desc">
+            电视动画《Re：从零开始的异世界生活》 [1-2] 改编自日本轻小说家长月达平原作的同名轻小说。在2015年7月19日举办的“MF文库J 夏之学园祭”活动现场，发表了其TV动画化的决定 [3-4]  。动画由WHITE FOX制作，于2016年4月4日起每周一在东京电视台首播，其中仅首话为1小时。全25话
+        </view>
+        <view class="othInfo">
+            <view class="leftCnt">
+                <view>
+                    <image class="icon" src="../../../images/like.png" mode="aspectFit" />
+                    <text>20</text>
+                </view>
+                <view>
+                    <image class="icon" src="../../../images/comment.png" mode="aspectFit" />
+                    <text>30</text>
+                </view>
+            </view>
+            <image class="rightIcon" src="../../../images/right.png" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
+        </view>
+    </view>
+</view>

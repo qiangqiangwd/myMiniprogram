@@ -1,0 +1,30 @@
+/**index.wxss**/
+page{
+   background: #ffffff;
+}
+.table {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+}
+.cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.center {
+  display: block;
+  padding: 20rpx;
+}
+
+/* 记载中的动画 */
+#loading5 {
+  width: 375px;
+  height: 300px;
+ 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -187.5px;
+  z-index: 1001;
+}

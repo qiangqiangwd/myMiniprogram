@@ -1,0 +1,15 @@
+<view class="table">
+  <view class="cell">
+    <view class="center">
+      <view wx:if="{{isReady}}">
+        <button open-type="getUserInfo" bindgetuserinfo="readyToLogin" class="button longButton">
+          点击登录
+        </button>
+      </view>
+      <view id="loading5" wx:else>
+        <i-lottie  path="{{aniPath}}" width="{{width}}" 
+  height="{{height}}" animation-data="{{anidata}}"></i-lottie>
+      </view>
+    </view>
+  </view>
+</view>

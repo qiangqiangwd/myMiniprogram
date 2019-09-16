@@ -1,0 +1,92 @@
+/* components/comment/comment.wxss */
+.commentBox {
+  display: flex;
+  padding: 20rpx;
+  background: #ffffff;
+  justify-content: space-between;
+}
+.commentBox .head {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 18rpx #eeeeee;
+}
+.commentBox .head image {
+  width: 100%;
+  height: 100%;
+}
+.commentBox .content {
+  width: calc(100% - 100rpx);
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.topInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.name,
+.time {
+  font-size: 30rpx;
+  color: #999999;
+}
+.time {
+  font-size: 24rpx;
+}
+.cnt {
+  font-size: 28rpx;
+  color: #333333;
+  text-align: justify;
+  word-break: break-all;
+}
+
+/* 操作部分 */
+.operation {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  color: #666666;
+  /* justify-content: space-between; */
+}
+.operation > view {
+  /* margin-right: 20rpx; */
+  flex-grow: 1;
+  width: 33.333%;
+}
+.del {
+  color: #f33;
+  text-align: right;
+}
+.like {
+  /* width: 100rpx; */
+  /* height: 100rpx; */
+  line-height: 28rpx;
+}
+.addLike{
+  color: #f33;
+}
+.like .num{
+  margin-left: 10rpx;
+}
+.comment {
+  font-size: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comment > view {
+  font-size: 24rpx;
+  margin-left: 10rpx;
+}
+.comment image {
+  width: 36rpx;
+  height: 36rpx;
+}

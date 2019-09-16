@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "hot":"../../components/home/hot/hot",
+    "classify":"../../components/home/classify/classify"
+  }
+}

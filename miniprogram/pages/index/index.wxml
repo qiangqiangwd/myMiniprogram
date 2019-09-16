@@ -1,0 +1,25 @@
+<swiper duration="{{250}}" current="{{selectIndex}}" class="homeContainer" bindanimationfinish="menuFinish">
+    <block>
+        <swiper-item>
+            <scroll-view scroll-y="{{true}}" class="item">
+                <hot></hot>
+                <hot></hot>
+                <hot></hot>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-y="{{true}}" class="item">
+                <classify></classify>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <view class="item">我的</view>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="footerMenu">
+    <view class="list {{item.index ==  selectIndex ? 'active':''}}" wx:for="{{footerList}}" wx:key="{{index}}" data-index="{{item.index}}" bindtap="menuFinish">
+        <image class="icon" src="../../images/{{item.index ==  selectIndex ? item.activeImgSrc :  item.imgSrc}}.png" mode="aspectFill" data-index="{{item.index}}" bindtap="menuFinish" />
+        {{item.name}}
+    </view>
+</view>
