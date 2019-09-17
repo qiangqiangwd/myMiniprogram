@@ -12,4 +12,4 @@
 ![Image text](https://raw.githubusercontent.com/qiangqiangwd/img-folder/master/img2.png?token=AFUHTHPIL5PTZJNH22PKWS25QBJ4S)
 
 # 完~
-![Image text](https://raw.githubusercontent.com/qiangqiangwd/img-folder/master/TIM%E5%9B%BE%E7%89%8720190417155410.gif?token=AFUHTHNDDY7ZH4FYBQBOP225QBJQY)
+![Image text](https://raw.githubusercontent.com/qiangqiangwd/img-folder/master/TIM%E5%9B%BE%E7%89%8720190417155410.gif?token=AFUHTHIZMOS6NNKBEPIGJBS5QBKLU)
