@@ -9,7 +9,12 @@
 - [小程序文档](https://developers.weixin.qq.com/miniprogram/dev/component/)
 
 效果的话大概长这样，正在开发中...
-![Image text](https://raw.githubusercontent.com/qiangqiangwd/img-folder/master/img2.png?token=AFUHTHPIL5PTZJNH22PKWS25QBJ4S)
+![Image text](https://raw.githubusercontent.com/qiangqiangwd/img-folder/master/img2.png)
 
+<<<<<<< HEAD
 ### 完~
 ![Image text](https://raw.githubusercontent.com/qiangqiangwd/img-folder/master/TIM%E5%9B%BE%E7%89%8720190417155410.gif)
+=======
+# 完~
+<div align=center><img src="https://raw.githubusercontent.com/qiangqiangwd/img-folder/master/TIM%E5%9B%BE%E7%89%8720190417155410.gif"/></div>
+>>>>>>> b850b4ad9c69a0d3c8629830e799fc362a8dc50d
