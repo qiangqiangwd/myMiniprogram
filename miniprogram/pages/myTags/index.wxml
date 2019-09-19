@@ -1,0 +1,11 @@
+<!-- miniprogram/pages/myTags/index.wxml -->
+<!-- 列表 -->
+<view class="container">
+    <hot type="self"></hot>
+    <hot type="self"></hot>
+    <hot type="self"></hot>
+</view>
+<!-- 新增 -->
+<view class="newBtn">
+    <view class="btn" bindtap="turnUrl"></view>
+</view>

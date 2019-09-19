@@ -3,10 +3,10 @@ button {
   background: initial;
 }
 
-button:focus{
+button:focus {
   outline: 0;
 }
-button::after{
+button::after {
   border: none;
 }
 
@@ -17,11 +17,32 @@ page {
   justify-content: flex-start;
 }
 
-.button{
+.button {
   font-size: 28rpx;
   background: #2d8cf0;
   color: #ffffff;
 }
-.longButton{
+.longButton {
   width: 100%;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.g-c {
+  color: #67c23a;
+}
+.b-c {
+  color: #409eff;
+}
+.r-c {
+  color: #f56c6c;
+}
+.o-c {
+  color: #e6a23c;
+}
+.gr-c {
+  color: #909399;
 }

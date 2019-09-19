@@ -1,0 +1,48 @@
+<!-- components/home/my/my.wxml -->
+<view class="topContainer">
+    <view class="top">
+        <image class="topBg" wx:if="{{myOptions.bgUrl}}" src="{{myOptions.bgUrl}}" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
+        <view class="topBox">
+            <view class="head">
+                <image src="{{userInfo.avatarUrl}}" mode="aspectFill" />
+            </view>
+            <view class="info">
+                <view class="name">{{userInfo.nickName}}</view>
+                <view class="desc">点击设置添加一条个性简介吧~</view>
+            </view>
+        </view>
+        <view class="othInfo">
+            <view>
+                <view class="t">评论数</view>
+                <view class="n">0</view>
+            </view>
+            <view>
+                <view class="t">被点赞数</view>
+                <view class="n">0</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="listBox">
+    <view class="list" bindtap="turnPage" data-url="../myTags/index">
+        <view class="box">
+            <image src="../../../images/my-type.png" mode="aspectFit" />
+            <text>我的标签</text>
+        </view>
+        <image class="rightIcon" src="../../../images/right.png" mode="aspectFit" />
+    </view>
+    <view class="list" bindtap="turnPage" data-url="../myTags/index">
+        <view class="box">
+            <image src="../../../images/my-type.png" mode="aspectFit" />
+            <text>我参与的</text>
+        </view>
+        <image class="rightIcon" src="../../../images/right.png" mode="aspectFit" />
+    </view>
+    <view class="list" bindtap="turnPage" data-url="../setting/index">
+        <view class="box">
+            <image src="../../../images/my-setting.png" mode="aspectFit" />
+            <text>设置</text>
+        </view>
+        <image class="rightIcon" src="../../../images/right.png" mode="aspectFit" />
+    </view>
+</view>

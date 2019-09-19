@@ -1,6 +1,6 @@
 Page({
   data: {
-    selectIndex: 1, // 当前所在（初始0）
+    selectIndex: 2, // 当前所在（初始0）
 
     footerList: [
       {

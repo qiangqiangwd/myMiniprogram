@@ -1,0 +1,130 @@
+/* components/home/my/my.wxss */
+.topContainer {
+  margin: 20rpx 20rpx 40rpx;
+  padding: 20rpx;
+  background: #ffffff;
+  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+  -moz-border-radius: 10rpx;
+  -ms-border-radius: 10rpx;
+  -o-border-radius: 10rpx;
+  overflow: hidden;
+  position: relative;
+}
+image {
+  width: 100%;
+  height: 100%;
+}
+.top .topBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.top .topBox {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  font-size: 0;
+  position: relative;
+  z-index: 1;
+}
+.top .topBox .head {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+}
+.top .topBox .info {
+  margin-left: 20rpx;
+  padding: 15rpx;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+  -moz-border-radius: 10rpx;
+  -ms-border-radius: 10rpx;
+  -o-border-radius: 10rpx;
+  box-sizing: border-box;
+  /* line-height: 1.5; */
+
+  max-width: calc(100% - 120rpx);
+}
+.top .topBox .info .name {
+  font-size: 30rpx;
+  color: #333333;
+}
+.top .topBox .info .desc {
+  font-size: 26rpx;
+  color: #555555;
+  margin-top: 20rpx;
+}
+.top .othInfo {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.7);
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+  -moz-border-radius: 10rpx;
+  -ms-border-radius: 10rpx;
+  -o-border-radius: 10rpx;
+  padding: 20rpx;
+
+  display: flex;
+}
+.top .othInfo > view {
+  flex-grow: 1;
+  text-align: center;
+  color: #333333;
+}
+/* .top .othInfo .t,
+.top .othInfo .n {
+} */
+.top .othInfo .t {
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+}
+.top .othInfo .n {
+  font-size: 44rpx;
+}
+
+.listBox {
+  background: #ffffff;
+  margin: 20rpx;
+  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+  -moz-border-radius: 10rpx;
+  -ms-border-radius: 10rpx;
+  -o-border-radius: 10rpx;
+  overflow: hidden;
+}
+.listBox .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40rpx 20rpx;
+  font-size: 28rpx;
+  color: #333333;
+  border-bottom: 1px solid #eeeeee;
+}
+.listBox .list:last-of-type {
+  border-bottom: none;
+}
+.listBox .list .box {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+.listBox .list .box image {
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 20rpx;
+}
+.listBox .rightIcon {
+  width: 20rpx;
+  height: 20rpx;
+}

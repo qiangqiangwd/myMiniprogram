@@ -4,7 +4,12 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    // 判断当前所在页面
+    // index 首页热门 、self 我的标签
+    type: {
+      type: String,
+      value: 'index'
+    }
   },
 
   /**
@@ -18,7 +23,7 @@ Component({
    */
   methods: {
     // 跳转对应评论
-    turnToComment(e){
+    turnToComment(e) {
       let url = e.currentTarget.dataset.url
       wx.navigateTo({
         url: url,

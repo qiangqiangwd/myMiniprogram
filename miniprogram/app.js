@@ -16,7 +16,19 @@ App({
   ajax: ajax,
   // 全局变量
   globalData:{
-    userInfo:null,
+    // userInfo:null,
+    userInfo: {
+      "nickName": "城墙～",
+      "gender": 1,
+      "language": "zh_CN",
+      "city": "Chengdu",
+      "province": "Sichuan",
+      "country": "China",
+      "avatarUrl": "https://wx.qlogo.cn/mmopen/vi_32/mNHUFBJiaZzVB44sCqiaVicWUA2TjwFHnIRPuJjUetzfAzrHKzaGc5dwvY9smPE8jTT4tAZdQP8MMrTbnmIvp4icjA/132",
+      "openid": "oT_dF4z9cVaP0JvhfhwJsIhIJfO0",
+      "id": "3c4c6d855d75b4c615f1bfc1449edb8b",
+      "registeredTime": 1567995078907
+    },
     // 时间转换函数
     // 格式：yyyy-MM-dd hh:mm:ss 或者 yyyy-MM-dd
     format(fmt,date) {

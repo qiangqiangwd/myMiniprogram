@@ -11,5 +11,5 @@
 效果的话大概长这样，正在开发中...
 ![Image text](https://raw.githubusercontent.com/qiangqiangwd/img-folder/master/img2.png?token=AFUHTHPIL5PTZJNH22PKWS25QBJ4S)
 
-# 完~
-![Image text](https://raw.githubusercontent.com/qiangqiangwd/img-folder/master/TIM%E5%9B%BE%E7%89%8720190417155410.gif?token=AFUHTHIZMOS6NNKBEPIGJBS5QBKLU)
+### 完~
+![Image text](https://raw.githubusercontent.com/qiangqiangwd/img-folder/master/TIM%E5%9B%BE%E7%89%8720190417155410.gif)

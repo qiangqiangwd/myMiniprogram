@@ -1,5 +1,5 @@
 /* components/home/hot.wxss */
-.container{
+.container {
   padding: 20rpx;
 }
 .list {
@@ -75,7 +75,35 @@
   height: 40rpx;
   vertical-align: middle;
 }
-.rightIcon{
-    width: 24rpx;
-    height: 24rpx;
+.rightIcon {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.myTagsCnt .t {
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+.myTagsCnt .btnBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+  border-top: 1px solid #eeeeee;
+}
+.myTagsCnt .btnBox > view {
+  flex-grow: 1;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  /* color: #333333; */
+  padding: 20rpx 0;
+}
+.myTagsCnt .btnBox > view:nth-of-type(1){
+  color: #2d8cf0;
+  border-right: 1px solid #eeeeee;
+}
+.myTagsCnt .btnBox > view:nth-of-type(2){
+  color: #f56c6c
 }
