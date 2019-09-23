@@ -43,7 +43,7 @@ picker {
 }
 .imgBox {
   margin-bottom: 20rpx;
-  height: 260rpx;
+  height: 300rpx;
   border: 1px dashed #eeeeee;
   border-radius: 10rpx;
   -webkit-border-radius: 10rpx;
@@ -60,7 +60,7 @@ picker {
 }
 .imgBox .upLoadImgBox {
   width: 100%;
-  height: 260rpx;
+  height: 300rpx;
   text-align: center;
   font-size: 0;
   position: relative;

@@ -43,6 +43,15 @@ const ajax = {
         name: 'comment',
         data: data
     }),
+    // 分类相关
+    classify: () => request({
+        name: 'classify'
+    }),
+    // 一级内容相关
+    menuList: data => request({
+        name: 'menuList',
+        data: data
+    }),
 }
 
 module.exports = ajax

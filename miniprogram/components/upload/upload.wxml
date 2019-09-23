@@ -1,4 +1,3 @@
 <!-- components/upload/upload.wxml -->
 
 <slot name="chooseBtn" bindtap="_uplaodFile">选择图片按钮</slot>
-<!-- <button bindtap="_submit" wx:if="{{!isAutoUpload}}">开始上传</button> -->

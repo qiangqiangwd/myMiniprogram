@@ -1,0 +1,15 @@
+[
+  {
+    "name": "添加一级菜单",
+    "value": {
+      "type": "add",
+      "classifyName": "游戏",
+      "classifyId": "0d98b260-6bf0-4a95-ae51-7cad8429374f",
+      "desc": "666666\n黄航\ns",
+      "title": "三人行",
+      "nickName": "城墙～",
+      "userId": "3c4c6d855d75b4c615f1bfc1449edb8b",
+      "imgSrc": "cloud://cqqserver-lqo61.6371-cqqserver-lqo61-1300157969/3c4c6d855d75b4c615f1bfc1449edb8b/1569037276500.jpg"
+    }
+  }
+]

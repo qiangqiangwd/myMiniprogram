@@ -54,7 +54,7 @@ Component({
           // console.log(res);
 
           _this.triggerEvent('tempFileChange', tempFilePaths);
-          if (isAutoUpload){
+          if (isAutoUpload) {
             _this._submit();
           }
         },
@@ -68,7 +68,7 @@ Component({
       })
     },
     // 删除图片
-    _delFile(i){
+    _delFile(i) {
       let tempImg = this.data.tempImg;
       if (!tempImg) return
 
@@ -96,7 +96,7 @@ Component({
 
       let promiseArr = [];
       wx.showLoading({
-        title:'上传中'
+        title: '上传中'
       });
       tempImg.forEach(item => {
         let suffix = /\.[^\.]+$/.exec(item)[0]; // 正则表达式，获取文件扩展名
@@ -108,9 +108,15 @@ Component({
 
       let resData = await Promise.all(promiseArr); // 上传到后台
       wx.hideLoading();
-      console.log('上传成功后的返回：', resData);
 
-      this.triggerEvent('success', resData);
+      let arr = [];
+      resData.forEach(item => {
+        if (/ok$/.test(item.errMsg)) {
+          arr.push(item.fileID)
+        }
+      });
+
+      this.triggerEvent('success', arr);
     }
   },
 })

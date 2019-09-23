@@ -25,6 +25,15 @@ page {
 .longButton {
   width: 100%;
 }
+.g-bc{
+  background: #67c23a!important;
+}
+.r-bc{
+  background: #f56c6c!important;
+}
+.o-bc{
+  background: #e6a23c!important;
+}
 
 image {
   width: 100%;
