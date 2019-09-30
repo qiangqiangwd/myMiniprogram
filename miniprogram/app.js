@@ -54,5 +54,12 @@ App({
       }
       return fmt;
     },
+  },
+  // 提示
+  message(msg) {
+    wx.showToast({
+      title: msg,
+      icon: 'none'
+    })
   }
 })

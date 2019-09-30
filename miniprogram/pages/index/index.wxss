@@ -8,6 +8,7 @@
   height: 100%;
   box-sizing: border-box;
   padding-bottom: 100rpx;
+  overflow-y: auto;
 }
 .footerMenu {
   position: fixed;
@@ -35,4 +36,10 @@
   width: 45rpx;
   height: 45rpx;
   margin: 0 auto 10rpx;
+}
+.inFooter{
+  text-align: center;
+  color: #999999;
+  padding: 30rpx 0;
+  font-size: 24rpx;
 }

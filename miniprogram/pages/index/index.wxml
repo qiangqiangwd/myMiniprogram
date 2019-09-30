@@ -1,15 +1,14 @@
 <swiper duration="{{250}}" current="{{selectIndex}}" class="homeContainer" bindanimationfinish="menuFinish">
     <block>
         <swiper-item>
-            <scroll-view scroll-y="{{true}}" class="item">
-                <hot></hot>
-                <hot></hot>
-                <hot></hot>
-            </scroll-view>
+            <view class="item">
+                <hot wx:for="{{hot.classifyList}}" wx:key="{{item._id}}" option="{{item}}" :index="{{index}}"></hot>
+                <view wx:if="{{hot.isInFooter}}" class="inFooter">已经到底了~</view>
+            </view>
         </swiper-item>
         <swiper-item>
             <scroll-view scroll-y="{{true}}" class="item">
-                <classify></classify>
+                <classify classifyList="{{classify.classifyList}}"></classify>
             </scroll-view>
         </swiper-item>
         <swiper-item>

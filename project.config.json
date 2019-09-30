@@ -55,9 +55,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 3,
 					"name": "新建标签",
 					"pathName": "pages/myTags/addOrEdit/index",
+					"query": "id=f885cb355d89796d038d8187636e8b86",
 					"scene": null
 				}
 			]

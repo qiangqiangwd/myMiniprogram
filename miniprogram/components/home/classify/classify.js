@@ -4,13 +4,18 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    // 分类列表
+    classifyList: {
+      type: Array,
+      value: []
+    },
     // 排行榜
     rankList: {
       type: Array,
       value: [
         {
           name: '游戏三人娘',
-          type:'动漫',
+          type: '动漫',
         },
         {
           name: '芒种',
@@ -48,6 +53,13 @@ Component({
    * 组件的初始数据
    */
   data: {
+    imgSrcArr:[
+      '../../../images/classify/youxi_1.png',
+      '../../../images/classify/dongman_1.png',
+      '../../../images/classify/yinle.png',
+      '../../../images/classify/xinfang-.png',
+      '../../../images/classify/sports.png',
+    ]
   },
 
   /**

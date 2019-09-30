@@ -1,9 +1,9 @@
 <!-- miniprogram/pages/myTags/index.wxml -->
 <!-- 列表 -->
 <view class="container">
-    <hot type="self"></hot>
-    <hot type="self"></hot>
-    <hot type="self"></hot>
+    <hot type="self" wx:for="{{classifyList}}" wx:key="{{item._id}}" option="{{item}}" binddel="delClassify" :index="{{index}}"></hot>
+    <view wx:if="{{classifyList.length <= 0 && !isInit}}" class="hasNone">暂无相关内容~</view>
+    <view wx:if="{{isInFooter}}" class="hasNone">已经到底啦~</view>
 </view>
 <!-- 新增 -->
 <view class="newBtn">

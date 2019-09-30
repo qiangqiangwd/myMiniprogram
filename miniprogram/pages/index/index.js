@@ -1,6 +1,9 @@
+const app = getApp();
+
+const store = require('../../static/index/index');
 Page({
   data: {
-    selectIndex: 2, // 当前所在（初始0）
+    selectIndex: 1, // 当前所在（初始0）
 
     footerList: [
       {
@@ -22,11 +25,17 @@ Page({
         index: 2
       },
     ],
-  },
 
+    ...store.state,
+  },
+  ...store.actions,
   // 切换
   // menuChange({ detail }) {
   // },
+  onLoad() {
+    // 请求初始数据
+    this['getData' + this.data.selectIndex]();
+  },
 
   // 当页面切换动画结束后
   menuFinish(e) {
@@ -36,6 +45,17 @@ Page({
       this.setData({
         selectIndex: current
       });
+      this['getData' + current](0);
+    }
+  },
+
+  // 下拉刷新
+  onPullDownRefresh() {
+    let name = 'pullDownRefresh_' + this.data.selectIndex;
+    if (this[name]) {
+      this[name]();
+    } else {
+      wx.stopPullDownRefresh();
     }
   },
 })

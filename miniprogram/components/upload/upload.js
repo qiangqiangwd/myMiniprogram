@@ -68,9 +68,8 @@ Component({
       })
     },
     // 删除图片
-    _delFile(i) {
+    _delFile(i,callback) {
       let tempImg = this.data.tempImg;
-      if (!tempImg) return
 
       let _this = this;
       wx.showModal({
@@ -78,44 +77,49 @@ Component({
         content: '是否确认删除该图片',
         success(res) {
           if (res.confirm) {
-            tempImg.splice(i, 1); // 删除对应
-            _this.setData({
-              tempImg: tempImg
-            });
-            _this.triggerEvent('tempFileChange', tempImg);
+            if (tempImg && tempImg.length > 0){
+              tempImg.splice(i, 1); // 删除对应
+              _this.setData({
+                tempImg: tempImg
+              });
+              _this.triggerEvent('tempFileChange', tempImg);
+            }
+            callback && callback();
           }
         }
       })
     },
 
     // 提交上传
-    async _submit() {
+    async _submit(callback) {
       let { tempImg, folderPos } = this.data;
-      console.log('进入', tempImg)
-      if (!tempImg || tempImg.length <= 0) return
-
-      let promiseArr = [];
-      wx.showLoading({
-        title: '上传中'
-      });
-      tempImg.forEach(item => {
-        let suffix = /\.[^\.]+$/.exec(item)[0]; // 正则表达式，获取文件扩展名
-        promiseArr.push(wx.cloud.uploadFile({
-          cloudPath: `${folderPos ? folderPos + '/' : ''}${(new Date().getTime() + suffix)}`,
-          filePath: item
-        }));
-      });
-
-      let resData = await Promise.all(promiseArr); // 上传到后台
-      wx.hideLoading();
-
+      // console.log('进入', tempImg);
       let arr = [];
-      resData.forEach(item => {
-        if (/ok$/.test(item.errMsg)) {
-          arr.push(item.fileID)
-        }
-      });
+      if (tempImg && tempImg.length > 0){
+        let promiseArr = [];
+        wx.showLoading({
+          title: '上传中'
+        });
+        tempImg.forEach(item => {
+          let suffix = /\.[^\.]+$/.exec(item)[0]; // 正则表达式，获取文件扩展名
+          promiseArr.push(wx.cloud.uploadFile({
+            cloudPath: `${folderPos ? folderPos + '/' : ''}${(new Date().getTime() + suffix)}`,
+            filePath: item
+          }));
+        });
 
+        let resData = await Promise.all(promiseArr); // 上传到后台
+        wx.hideLoading();
+
+        
+        resData.forEach(item => {
+          if (/ok$/.test(item.errMsg)) {
+            arr.push(item.fileID)
+          }
+        });
+      }
+
+      callback && callback(arr);
       this.triggerEvent('success', arr);
     }
   },

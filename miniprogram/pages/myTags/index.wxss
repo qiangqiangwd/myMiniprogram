@@ -47,3 +47,10 @@
   height: 50rpx;
   width: 5rpx;
 }
+
+.hasNone{
+  color: #666666;
+  text-align: center;
+  padding: 60rpx 0;
+  font-size: 28rpx;
+}

@@ -101,6 +101,9 @@ picker {
   padding-bottom: 40rpx;
   position: relative;
 }
+.addOrEditBox .textareaList textarea{
+  height: 400rpx;
+}
 .textareaList .textNum{
   position: absolute;
   bottom: 0;

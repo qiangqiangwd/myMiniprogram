@@ -1,7 +1,8 @@
 {
+  "enablePullDownRefresh": true,
   "usingComponents": {
-    "hot":"../../components/home/hot/hot",
-    "classify":"../../components/home/classify/classify",
-    "my":"../../components/home/my/my"
+    "hot": "../../components/home/hot/hot",
+    "classify": "../../components/home/classify/classify",
+    "my": "../../components/home/my/my"
   }
 }

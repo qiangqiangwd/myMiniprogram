@@ -10,21 +10,21 @@
         <input type="text" value="{{title}}" bindinput="inputChange" data-name="title" placeholder="请输入标签标题" placeholder-class="plClass" />
     </view>
     <view class="imgBox">
-        <image src="{{item}}" mode="aspectFill" wx:for="{{upImgList}}" wx:key="{{index}}" />
-        <view class="{{upImgList.length <= 0 ? '' : 'hide'}}">
-            <upload folderPos="{{userInfo.id}}" bindtempFileChange="bindtempFileChange" id="uploadEle" bindsuccess="startSetType">
+        <image src="{{imgSrc}}" mode="aspectFill" wx:if="{{imgSrc}}" />
+        <view class="{{imgSrc ? 'hide' : ''}}">
+            <upload folderPos="{{userInfo.id}}" bindtempFileChange="bindtempFileChange" id="uploadEle">
                 <view slot="chooseBtn" class="upLoadImgBox">
                     <image src="../../../images/addImg.png" mode="aspectFit" />
                 </view>
             </upload>
         </view>
-        <view class="delBtn" wx:if="{{upImgList.length > 0}}" bindtap="delImg">
+        <view class="delBtn" wx:if="{{imgSrc}}" bindtap="delImg">
             <image src="../../../images/del.png" mode="aspectFit" />
         </view>
     </view>
     <view class="list  textareaList">
-        <textarea placeholder="请输入标签标题描述" maxlength="150" value="{{desc}}" bindinput="inputChange" data-name="desc" placeholder-class="plClass" />
-        <view class="textNum">{{descCnt.length || 0}}/150</view>
+        <textarea placeholder="请输入标签标题描述" maxlength="200" value="{{desc}}" bindinput="inputChange" data-name="desc" placeholder-class="plClass" />
+        <view class="textNum">{{desc.length}}/200</view>
     </view>
-    <button class="button longButton  g-bc" bindtap="sureToUpdata">确定</button>
+    <button class="button longButton {{id?'o-bc':'g-bc'}}" bindtap="sureToUpdata">确定{{id?'修改':'添加'}}</button>
 </view>

@@ -3,6 +3,7 @@
     "name": "添加一级菜单",
     "value": {
       "type": "add",
+      "openid": "oT_dF4z9cVaP0JvhfhwJsIhIJfO0",
       "classifyName": "游戏",
       "classifyId": "0d98b260-6bf0-4a95-ae51-7cad8429374f",
       "desc": "666666\n黄航\ns",
@@ -10,6 +11,44 @@
       "nickName": "城墙～",
       "userId": "3c4c6d855d75b4c615f1bfc1449edb8b",
       "imgSrc": "cloud://cqqserver-lqo61.6371-cqqserver-lqo61-1300157969/3c4c6d855d75b4c615f1bfc1449edb8b/1569037276500.jpg"
+    }
+  },
+  {
+    "name": "获取一级分类",
+    "value": {
+      "openid": "oT_dF4z9cVaP0JvhfhwJsIhIJfO0",
+      "type": "get",
+      "pageIndex": 0,
+      "pageSize": 10
+    }
+  },
+  {
+    "name": "删除操作",
+    "value": {
+      "type": "delete",
+      "id": "075734515d883c1c0303bba925d91cd0"
+    }
+  },
+  {
+    "name": "获取详情",
+    "value": {
+      "id": "f885cb355d89796d038d8187636e8b86",
+      "type": "getById"
+    }
+  },
+  {
+    "name": "修改",
+    "value": {
+      "classifyName": "音乐",
+      "classifyId": "31a8bd9c-f938-47ed-8647-3757083217be",
+      "desc": "     《芒种》 [1]  是来自于音阙诗听音乐社的一首歌曲，由Morri3on(乔凡三)编曲，赵方婧演唱。正式发行于2019年6月6日\n      天光云影，于岁月中隐隐闪烁，有人在其中看见复生，有人于其中遇见死亡。\n佛家的箴言恍恍惚惚刻进石碑，你经历了来来去去的分与合。\n你在尘世中沉思，或疑惑，或明悟，浑浑噩噩却也终将学会懂得。\n人生的路上，你种什么因，便得什么果。",
+      "title": "芒种",
+      "nickName": "城墙～",
+      "userId": "3c4c6d855d75b4c615f1bfc1449edb8b",
+      "openid": "oT_dF4z9cVaP0JvhfhwJsIhIJfO0",
+      "imgSrc": "cloud://cqqserver-lqo61.6371-cqqserver-lqo61-1300157969/3c4c6d855d75b4c615f1bfc1449edb8b/1569290603990.jpg",
+      "type": "update",
+      "id": "f885cb355d89796d038d8187636e8b86"
     }
   }
 ]
